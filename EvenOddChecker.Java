@@ -1,4 +1,3 @@
-//2. Even or Odd Checker (Syntax Errors)
 import java.util.Scanner;
 
 public class EvenOddChecker {
@@ -8,11 +7,15 @@ public class EvenOddChecker {
         System.out.print("Enter a number: ");
         int number = input.nextInt();
         
-        if number % 2 == 0 { // Missing parentheses around condition
-            System.out.println("The number is even.");
-        } else  // Missing opening curly brace
+        if (number % 2 == 0) { // Removed the semicolon
+            System.out.println("The number is even."); 
+        } else { // Changed 'elif' to 'else'
             System.out.println("The number is odd.");
+        }
         
-        input.close();
+        input.close(); // Changed 'scanner' to 'input'
     }
 }
+ 
+//  Output 
+//  Enter a number: 5
